@@ -24,3 +24,6 @@ RUN wget -q -O - https://github.com/lierdakil/pandoc-crossref/archive/refs/tags/
     | tar xz \
     && mv pandoc-crossref* pandoc-crossref \
     && mv pandoc-crossref /usr/bin/
+
+COPY .pandoc/ /data/.pandoc/
+ENTRYPOINT ["/usr/bin/pandoc", "-d", "./.pandoc/default.yml"]

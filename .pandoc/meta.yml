@@ -1,0 +1,12 @@
+documentclass: ltjsarticle
+indent: true
+figureTitle: "図 "
+tableTitle: "表 "
+listingTitle: "リスト "
+figPrefix: "図."
+eqnPrefix: "式."
+tblPrefix: "表."
+lstPrefix: "リスト."
+header-includes:
+  - \usepackage[margin=1in]{geometry}
+  - \usepackage{listings}

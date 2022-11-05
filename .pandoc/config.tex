@@ -1,0 +1,28 @@
+\renewcommand{\lstlistingname}{リスト}
+\definecolor{comment}{RGB}{0,128,0}
+\definecolor{string}{RGB}{255,0,0}
+\definecolor{keyword}{RGB}{0,0,255}
+
+\lstset{
+    commentstyle={\slshape \color{comment}},
+    stringstyle=\color{string},
+    keywordstyle=\color{keyword},
+    numbers=left,
+    numberstyle=\tiny,
+    numbersep=5pt,
+    frame=tbrl,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    showstringspaces=false,
+    upquote=true,
+    basicstyle = \ttfamily\scriptsize,
+    breaklines = true,
+    columns=fixed,
+    basewidth=0.5em
+}
+
+% TODO
+% \newcommand{\code}[3]{
+%     \lsttop{#1}{#2}
+%     #3
+%     \lstbtm
+% }

@@ -1,0 +1,10 @@
+pdf-engine: lualatex
+from: markdown+east_asian_line_breaks+example_lists
+filters:
+  - ${.}/punctuation.lua
+  - pandoc-crossref
+number-sections: true
+metadata-files:
+  - ${.}/meta.yml
+include-before-body:
+  - ${.}/config.tex
