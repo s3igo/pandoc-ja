@@ -1,6 +1,6 @@
 function Str(elem)
-    text = elem.text
-    text = string.gsub(text, '．', '。')
-    text = string.gsub(text, '，', '、')
-    return(pandoc.Str(text))
+    comma = string.gsub(elem.text, '、', '，')
+    comma_period = string.gsub(comma, '。', '．')
+
+    return pandoc.Str(comma_period)
 end
